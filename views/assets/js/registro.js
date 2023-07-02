@@ -1,4 +1,4 @@
-$(document).ready(function() { 
+/*$(document).ready(function() { 
 
     // şifre kurallı değilse butonu disable et
     $('#reg_userpassword').keyup(function() {
@@ -9,7 +9,7 @@ $(document).ready(function() {
         $('#reg_submit').attr('disabled', true);
       }
     });
-  
+  /*
     // password-rule divi hide/show
     $('#reg_userpassword').keyup(function() {
       if ($('#reg_userpassword').val()) {
@@ -133,10 +133,10 @@ $(document).ready(function() {
     }
   
   
-  });
+  });*/
   
-  // Şifre gizle göster
-  function togglePassword() {
+  // Mostrar password
+  function mostrarPassword() {
   
     var element = document.getElementById('reg_userpassword');
     element.type = (element.type == 'password' ? 'text' : 'password');

@@ -30,11 +30,42 @@
         </div>
     </nav>
 </header>
-<!-- INFORMACION DE LA EMPRESA -->
+<!-- DETALLES DEL PRODUCTO -->
 <section>
-    <div>
-        
-    </div>
+    <!--<section id="articulos" style="margin-top: 35px">
+        <div class="container">
+          <div class="row row-cols-2" style="margin-left: 420px">
+            <div class="card" style="margin: 5px">
+              <div class="card-body">
+                <figure style="text-align: center">
+                  <img th:src="@{${articulo.imagen}}" width="120"/>
+                </figure>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">[[${articulo.descripcion}]]</h5>
+                <h7 class="card-title">[[${articulo.detalle}]]</h7>
+                <figure style="margin-top: 10px">
+                  $[[${articulo.precio}]]
+                </figure>
+                <form>
+                  <input type="hidden" name="texto" th:value="${articulo.idArticulo}"/>
+                  <input type="hidden" name="texto" th:value="${articulo.existencias}"/>
+                  <a th:href="@{/carrito/agregar/}+${articulo.idArticulo}"
+                          class="btn btn-outline-success">
+                    <i class="fas fa-cart-plus"></i> [[#{producto.anadir}]]
+                  </a>
+                  <a th:href="@{/carrito/pago}" style="margin-left: 130px" class="btn btn-success" id="comprar"
+                          name="comprar"
+                          type="button">
+                     [[#{producto.comprar}]]
+                  </a>
+                </form>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+      </section>-->
 </section>
      <!-- FOOTER -->
      <footer id="footer" style="padding-top: 10px;">

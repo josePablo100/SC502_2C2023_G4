@@ -25,8 +25,8 @@
             </a>
             <div class="enlaces" style="margin-top: -45px;">
                 <a href="catalogo.html" id="enlace-individual">Catálogo</a>
-                <a href="#" id="enlace-individual">Acerca de Nosotros</a>
-                <a href="#" id="enlace-individual">Compras</a>
+                <a href="informacion.html" id="enlace-individual">Acerca de Nosotros</a>
+                <a href="carrito.html" id="enlace-individual">Compras</a>
                 <a href="inicio_sesion.html" id="enlace-individual" style="padding-right: 70px;">Perfil</a>
             </div>
         </div>
@@ -34,13 +34,13 @@
 </header>
 <!-- REGISTRO -->
 <section>
-    <img id="img-login" src="../views/assets/img/fondo-registro.png" width="1518"/>
+    <img id="img-login" src="../views/assets/img/fondo-registro.png" width="1518" height="700px"/>
     <div class="container-registro">
         <div class="row-registro">
           <div class="col-md-4"></div>
           <div class="col-md-5">
             <div class="card cardbox" style="width: 500px;">
-              <div class="titulo-login" style="text-align: center; font-family: 'Times New Roman';">Registro</div>
+              <div class="titulo-login" style="text-align: center; padding-top: 10px;">Registro</div>
               <div class="card-body">
 
                 <div class="form-group" >
@@ -55,7 +55,7 @@
                     <div class="form-group">
                         <label class="sr-only">lastName</label>
                         <input type="text" id="reg_lastname" name="lastName" class="form-control"
-                        value="" placeholder="PrimerApellido" required>
+                        value="" placeholder="Primer Apellido" required>
                       </div>
                       <br>
                       <div class="form-group">
@@ -79,25 +79,25 @@
                         data-html="true" value="" placeholder="Contraseña" required>
                         
                         <div class="input-group-append" style="margin-top: 3.5px;margin-left: 5px;">
-                          <button class="btn btn-outline-secondary" type="button" id="button-append1" onclick="togglePassword()">
+                          <button class="btn btn-outline-secondary" type="button" id="button-append1" onclick="mostrarPassword()">
                             <i class="fa fa-eye" aria-hidden="true"></i>
                           </button>
                         </div>
                       </div>
                       <br>
-                      <!-- barra de progreso de la contrasena -->
+                      <!-- barra de progreso de la contrasena 
                       <div class="progress mt-1" id="reg-password-strength">
                           <div id="password-strength" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:0%">
                           </div>
                         </div>
                         <br>
-                      <!-- resultado de la contrasena -->
+                       resultado de la contrasena 
                       <div class="help-block text-right">
                         <span id="reg-password-quality" class="hide pull-left block-help">
                          <small>Password <span id="reg-password-quality-result"></span></small>
                         </span>
                       </div>      
-                      <!-- reglas de la contrasena -->
+                       reglas de la contrasena 
                       <div id="reg_passwordrules" class="hide password-rule mt-2"><small>
       
                         <ul class="list-unstyled">
@@ -114,16 +114,16 @@
                             <span class="one-special-char"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
                             &nbsp; Mínimo 1 caracter especial (!@#$%^&*)</li>
                         </ul>
-                        </small></div>
+                        </small></div>-->
       
                     </div>
                     
-                    <!-- password-confirm group -->
+                    <!-- password-confirm group 
                     <div class="form-group">
       
-                      <!-- password-confirm label -->
+                       password-confirm label 
                       <label class="sr-only">Password Confirm  </label>
-                      <!-- password-confirm input -->
+                       password-confirm input 
                       <div class="input-group">
                         <input type="password" id="reg_userpasswordconfirm" class="form-control" data-placement="bottom" 
                         data-toggle="popover" data-container="body" data-html="true" placeholder="Confirmar Contraseña" required>
@@ -136,13 +136,13 @@
                         
                       </div>
                       <br>
-                      <!-- password-confirm error message -->
+                      password-confirm error message 
                       <div class="help-block text-right">
                         <small><span id="error-confirmpassword" class="hide pull-right block-help">
                         <i class="fa fa-info-circle text-danger" aria-hidden="true"></i>Las contraseñas no coinciden</span></small>
                       </div>
       
-                    </div>
+                    </div>-->
                  
                     <div class="form-group">
                         <label class="sr-only">telefono</label>
@@ -153,7 +153,7 @@
 
                     <!-- Submit -->
                     <div class="form-group" style="text-align: center;">
-                      <a href="inicio_sesion.html"><button id="reg_submit" name="submit"  value="1" class="btn btn-light letra" style="background-color: #252435;color: white;" >Crear Usuario</button></a>
+                      <a href="perfil.html"><button id="reg_submit" name="submit"  value="1" class="btn btn-light letra" style="background-color: #252435;color: white;" >Crear Usuario</button></a>
                       <div id="sign-up-popover" class="hide"><p>Está vacío</p></div>
                     </div>
                   </form>
